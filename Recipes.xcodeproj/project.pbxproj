@@ -21,6 +21,8 @@
 		E6B9B3EB1861BDE8004D22EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B9B3CD1861BDE8004D22EF /* UIKit.framework */; };
 		E6B9B3F31861BDE8004D22EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B3F11861BDE8004D22EF /* InfoPlist.strings */; };
 		E6B9B3F51861BDE8004D22EF /* RecipesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B9B3F41861BDE8004D22EF /* RecipesTests.m */; };
+		E6B9B4001861C285004D22EF /* ORGRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B9B3FF1861C285004D22EF /* ORGRecipe.m */; };
+		E6B9B40518623438004D22EF /* cookies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6B9B40418623438004D22EF /* cookies.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		E6B9B3F01861BDE8004D22EF /* RecipesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecipesTests-Info.plist"; sourceTree = "<group>"; };
 		E6B9B3F21861BDE8004D22EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6B9B3F41861BDE8004D22EF /* RecipesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipesTests.m; sourceTree = "<group>"; };
+		E6B9B3FE1861C285004D22EF /* ORGRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRecipe.h; sourceTree = "<group>"; };
+		E6B9B3FF1861C285004D22EF /* ORGRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRecipe.m; sourceTree = "<group>"; };
+		E6B9B40418623438004D22EF /* cookies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cookies.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,7 @@
 		E6B9B3CF1861BDE8004D22EF /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				E6B9B40418623438004D22EF /* cookies.jpg */,
 				E6B9B3D81861BDE8004D22EF /* ORGAppDelegate.h */,
 				E6B9B3D91861BDE8004D22EF /* ORGAppDelegate.m */,
 				E6B9B3DB1861BDE8004D22EF /* Main.storyboard */,
@@ -119,6 +125,8 @@
 				E6B9B3DF1861BDE8004D22EF /* ORGViewController.m */,
 				E6B9B3E11861BDE8004D22EF /* Images.xcassets */,
 				E6B9B3D01861BDE8004D22EF /* Supporting Files */,
+				E6B9B3FE1861C285004D22EF /* ORGRecipe.h */,
+				E6B9B3FF1861C285004D22EF /* ORGRecipe.m */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				E6B9B3E21861BDE8004D22EF /* Images.xcassets in Resources */,
 				E6B9B3D41861BDE8004D22EF /* InfoPlist.strings in Resources */,
 				E6B9B3DD1861BDE8004D22EF /* Main.storyboard in Resources */,
+				E6B9B40518623438004D22EF /* cookies.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 			files = (
 				E6B9B3E01861BDE8004D22EF /* ORGViewController.m in Sources */,
 				E6B9B3D61861BDE8004D22EF /* main.m in Sources */,
+				E6B9B4001861C285004D22EF /* ORGRecipe.m in Sources */,
 				E6B9B3DA1861BDE8004D22EF /* ORGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +471,7 @@
 				E6B9B3FA1861BDE8004D22EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E6B9B3FB1861BDE8004D22EF /* Build configuration list for PBXNativeTarget "RecipesTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +480,7 @@
 				E6B9B3FD1861BDE8004D22EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

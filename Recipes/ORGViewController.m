@@ -7,6 +7,8 @@
 //
 
 #import "ORGViewController.h"
+#import "ORGRecipe.h"
+
 
 @interface ORGViewController ()
 
@@ -24,6 +26,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    ORGRecipe *recipe = [[ORGRecipe alloc]init];
+    recipe.title = @"Chocolate Chip Cookies";
+    recipe.directions = @"Put the flour and other dry ingredients in a bowl, stir in the eggs until evenly moist. Add chocolate chips and stir in until even. Place tablespoon-size portions on greased cookie sheet and bake at 350° for 6 minutes.";
+    recipe.image = [UIImage imageNamed:@"cookies.jpg"];
+    self.recipeTitle.text = recipe.title;
+    self.directionsView.text = recipe.directions;
+    self.imageView.image = recipe.image;
 }
 
 @end

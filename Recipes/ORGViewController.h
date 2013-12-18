@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ORGRecipe.h"
 
 @interface ORGViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *recipeTitle;
+@property (weak, nonatomic) IBOutlet UITextView *directionsView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
+@property (strong, nonatomic) ORGRecipe *recipe;
 @end
